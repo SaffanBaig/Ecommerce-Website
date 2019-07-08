@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %} 
+  <!-- CSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<h1>Hello, world!</h1>
+<h2>{{title}}</h2>
+<h3>{{premium}}</h3>
+<div class="row">
+  <div class="col">
+    <img src="{% static 'img/hat.jpg' %}" alt="hat">
+  </div>
+</div>
+
+{% endblock %}
